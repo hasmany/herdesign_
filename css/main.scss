@@ -5,6 +5,9 @@
 // VARIABLES //
 $imgWidth: 100%;
 $darkPink: #ee0186;
+$defaultMargin: 10px;
+$defaultPadding: 10px;
+
 // DEFAULT STYLES //
 p, ul, li, h1, body, h3 {
   margin: 0;
@@ -62,22 +65,31 @@ img {
 }
 
 .main-content {
+  margin-left: $defaultMargin;
+  margin-right: $defaultMargin;
+  margin-top: $defaultMargin;
   text-align: center;
   .secondary-content {
     display: none;
   }
   .primary-content {
-    margin-top: 10px;
+
+    > div:nth-of-type(2) {
+      margin-left: 3.5px;
+      margin-right: 3.5px;
+    }
     .grid-picture {
       // 6 worked, 4 so, why?
-
+      img {
+        width: 100%
+      }
     }
   }
 }
 
 .main-info {
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: $defaultMargin;
+    padding-top: $defaultMargin;
     background-color: rgba(238, 240, 241, .8);
   li {
     display: inline-block
@@ -91,7 +103,7 @@ img {
 }
 
 .main-footer {
-  margin-top: 10px;
+  margin-top: $defaultMargin;
   text-align: center;
 }
 
