@@ -3,12 +3,15 @@
 
 
 // VARIABLES //
+//////////////
+
 $imgWidth: 100%;
 $darkPink: #ee0186;
 $defaultMargin: 10px;
 $defaultPadding: 10px;
 
 // DEFAULT STYLES //
+
 p, ul, li, h1, body, h3 {
   margin: 0;
   padding: 0;
@@ -30,12 +33,18 @@ img {
   max-width: $imgWidth;
 }
 
+// BACKGROUND //
+///////////////
+
 .container {
   background-image: url("../images/background-top.png"), url("../images/background-bottom.png");
   background-position: center top, center bottom;
   background-repeat: repeat-x;
 }
-// HEADER STYLES //
+
+// HEADER //
+////////////
+
 .main-header {
   text-align: center;
 
@@ -63,7 +72,19 @@ img {
         display: inline-block;
       }
   }
+  input {
+    background-image: url("../images/search_glass.png");
+    background-repeat: no-repeat;
+    background-color: #e7e7e7;
+    padding-left: $defaultPadding * 5;
+    margin-top: $defaultMargin / 2;
+    margin-bottom: $defaultMargin / 2;
+    height: $defaultMargin * 4;
+  }
 }
+
+// MAIN-CONTENT IMAGES
+//////////////////////
 
 .main-content {
   margin-left: $defaultMargin;
@@ -88,7 +109,8 @@ img {
   }
 }
 
-// MAIN-CONTENT INFO //
+// MAIN-CONTENT TEXT //
+//////////////////////
 
 .main-info {
   margin-top: $defaultMargin;
@@ -97,7 +119,6 @@ img {
   color: #938a8a;
   > div {
     padding-left: 2%;
-    padding-right: 2%;
     padding-top: $defaultMargin;
     padding-bottom: $defaultMargin;
   }
@@ -105,9 +126,14 @@ img {
     margin-bottom: $defaultMargin;
   }
   li {
-    display: inline-block
+    display: inline-block;
+    padding-left: 5%;
   }
 }
+
+
+// FOOTER //
+///////////
 
 .pink-bar {
   margin:  15px 0 15px 0;
