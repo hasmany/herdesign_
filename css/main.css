@@ -56,8 +56,16 @@ img {
 
 .main-info {
   margin-top: 10px;
-  padding-top: 10px;
-  background-color: rgba(238, 240, 241, 0.8); }
+  line-height: 25px;
+  background-color: rgba(238, 240, 241, 0.8);
+  color: #938a8a; }
+  .main-info > div {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .main-info h3, .main-info p {
+    margin-bottom: 10px; }
   .main-info li {
     display: inline-block; }
 
