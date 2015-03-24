@@ -1,0 +1,60 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+p, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+// LAYOUT COLORS
+.main-header {
+  background-color: red;
+  > div:first-child {
+    @include outer-container
+  }
+  .logo {
+    @include span-columns(4);
+    background-color: blue;
+  }
+  .nav {
+    @include span-columns(8);
+    background-color: green;
+  }
+  .wide-nav {
+    background-color: #ee0186;
+  }
+}
+
+.main-content {
+  @include outer-container;
+  .secondary-content {
+    @include span-columns(4);
+    background-color: steelblue;
+  }
+  .primary-content {
+    @include span-columns(8);
+    background-color: tomato;
+    .grid-picture {
+      // 6 worked, 4 so, why?
+      @include span-columns(6);
+      @include omega(2n);
+      background-color: purple;
+    }
+  }
+}
+
+.main-info {
+  @include outer-container;
+  background-color: orange;
+  div {
+    @include span-columns(6);
+  }
+}
+
+.main-footer {
+  background-color: steelblue;
+}
+
