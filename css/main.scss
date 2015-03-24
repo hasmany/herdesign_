@@ -26,6 +26,7 @@ img {
 .container {
   background-image: url("../images/bg-body-top.jpg"), url("../images/bg-body-bottom.jpg");
   background-position: center top, center bottom;
+  background-repeat: repeat-x;
 }
 // HEADER STYLES //
 .main-header {
@@ -36,30 +37,35 @@ img {
   }
   .nav {
 
+    ul {
+      background-color: rgba(247, 209, 226, .9)
+    }
     li {
       display: inline-block;
+      &:hover {
+        background-color: rgba(247, 209, 226, .9);
+      }
     }
   }
   .wide-nav {
     background-color: #ee0186;
       li {
+        color: white;
         display: inline-block;
       }
   }
 }
 
 .main-content {
-
+  text-align: center;
   .secondary-content {
-
-    background-color: steelblue;
+    display: none;
   }
   .primary-content {
-
-    background-color: tomato;
+    margin-top: 10px;
     .grid-picture {
       // 6 worked, 4 so, why?
-      background-color: purple;
+
     }
   }
 }
