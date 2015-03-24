@@ -4,95 +4,40 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-p, ul, li, h1 {
+p, ul, li, h1, body {
   margin: 0;
   padding: 0; }
+
+body {
+  font-famly: Arial; }
 
 ul {
   list-style: none; }
 
+img {
+  max-width: 100%; }
+
 .main-header {
+  text-align: center;
   background-color: red; }
-  .main-header > div:first-child {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    .main-header > div:first-child::after {
-      clear: both;
-      content: "";
-      display: table; }
   .main-header .logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
     background-color: blue; }
-    .main-header .logo:last-child {
-      margin-right: 0; }
   .main-header .nav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    background-color: green; }
-    .main-header .nav:last-child {
-      margin-right: 0; }
+    background-color: rgba(247, 209, 226, 0.5); }
+    .main-header .nav li {
+      display: inline-block; }
   .main-header .wide-nav {
     background-color: #ee0186; }
 
-.main-content {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .main-content::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .main-content .secondary-content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    background-color: steelblue; }
-    .main-content .secondary-content:last-child {
-      margin-right: 0; }
-  .main-content .primary-content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    background-color: tomato; }
-    .main-content .primary-content:last-child {
-      margin-right: 0; }
-    .main-content .primary-content .grid-picture {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      background-color: purple; }
-      .main-content .primary-content .grid-picture:last-child {
-        margin-right: 0; }
-      .main-content .primary-content .grid-picture:nth-child(2n) {
-        margin-right: 0; }
-      .main-content .primary-content .grid-picture:nth-child(2n+1) {
-        clear: left; }
+.main-content .secondary-content {
+  background-color: steelblue; }
+.main-content .primary-content {
+  background-color: tomato; }
+  .main-content .primary-content .grid-picture {
+    background-color: purple; }
 
 .main-info {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   background-color: orange; }
-  .main-info::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .main-info div {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .main-info div:last-child {
-      margin-right: 0; }
 
 .main-footer {
   background-color: steelblue; }
