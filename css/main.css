@@ -17,17 +17,18 @@ ul {
 img {
   max-width: 100%; }
 
+.container {
+  background-image: url("../images/bg-body-top.jpg"), url("../images/bg-body-bottom.jpg");
+  background-position: center top, center bottom; }
+
 .main-header {
-  text-align: center;
-  background-color: red; }
-  .main-header .logo {
-    background-color: blue; }
-  .main-header .nav {
-    background-color: rgba(247, 209, 226, 0.5); }
-    .main-header .nav li {
-      display: inline-block; }
+  text-align: center; }
+  .main-header .nav li {
+    display: inline-block; }
   .main-header .wide-nav {
     background-color: #ee0186; }
+    .main-header .wide-nav li {
+      display: inline-block; }
 
 .main-content .secondary-content {
   background-color: steelblue; }
@@ -35,11 +36,5 @@ img {
   background-color: tomato; }
   .main-content .primary-content .grid-picture {
     background-color: purple; }
-
-.main-info {
-  background-color: orange; }
-
-.main-footer {
-  background-color: steelblue; }
 
 /*# sourceMappingURL=main.css.map */

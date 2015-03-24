@@ -23,21 +23,28 @@ img {
   max-width: $imgWidth;
 }
 
+.container {
+  background-image: url("../images/bg-body-top.jpg"), url("../images/bg-body-bottom.jpg");
+  background-position: center top, center bottom;
+}
 // HEADER STYLES //
 .main-header {
   text-align: center;
-  background-color: red;
+
   .logo {
-    background-color: blue;
+
   }
   .nav {
-    background-color: rgba(247, 209, 226, .5);
+
     li {
-      display: inline-block
+      display: inline-block;
     }
   }
   .wide-nav {
     background-color: #ee0186;
+      li {
+        display: inline-block;
+      }
   }
 }
 
@@ -58,12 +65,12 @@ img {
 }
 
 .main-info {
-  background-color: orange;
+
   div {
   }
 }
 
 .main-footer {
-  background-color: steelblue;
+
 }
 
