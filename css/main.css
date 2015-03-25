@@ -91,11 +91,9 @@ img {
       .main-content .secondary-content {
         float: left;
         display: block;
-        margin-right: 2.35765%;
-        width: 14.70196%;
-        margin-right: 1%; }
+        width: 17.05961%; }
         .main-content .secondary-content:last-child {
-          margin-right: 0; } }
+          width: 14.70196%; } }
   .main-content .primary-content {
     border: 2px solid red; }
     @media screen and (min-width: 768px) {
@@ -106,12 +104,15 @@ img {
         width: 82.94039%; }
         .main-content .primary-content:last-child {
           margin-right: 0; } }
+    .main-content .primary-content > div:nth-of-type(2) {
+      margin-top: 5px; }
     @media screen and (min-width: 768px) {
       .main-content .primary-content .grid-picture {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 48.82117%;
+        margin-bottom: 5px; }
         .main-content .primary-content .grid-picture:last-child {
           margin-right: 0; }
         .main-content .primary-content .grid-picture:nth-child(2n) {
@@ -123,11 +124,26 @@ img {
   margin-top: 10px;
   line-height: 25px;
   background-color: rgba(238, 240, 241, 0.8);
-  color: #938a8a; }
+  color: #938a8a;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-info::after {
+    clear: both;
+    content: "";
+    display: table; }
   .main-info > div {
     padding-left: 2%;
     padding-top: 10px;
     padding-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .main-info > div {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        .main-info > div:last-child {
+          margin-right: 0; } }
   .main-info h3, .main-info p {
     margin-bottom: 10px; }
   .main-info > div:nth-of-type(2) div:first-of-type img {

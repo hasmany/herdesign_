@@ -117,10 +117,7 @@ img {
     display: none;
     border: 2px solid yellow;
     @include media($tablet) {
-      @include span-columns(2);
-      // using border-collapse made it
-      // diffuclt to add margin for spacing
-      margin-right: 1%;
+      @include span-columns(2, block-collapse);
     }
   }
   .primary-content {
@@ -131,12 +128,14 @@ img {
     > div:nth-of-type(2) {
       // margin-left: 3.5px;
       // margin-right: 3.5px;
+      margin-top: $defaultMargin / 2;
     }
     .grid-picture {
       // 6 worked, 4 so, why?
       @include media($tablet) {
         @include span-columns(6);
         @include omega(2n);
+        margin-bottom: $defaultMargin / 2;
       }
     }
   }
@@ -150,10 +149,14 @@ img {
   line-height: $defaultMargin * 2.5;
   background-color: rgba(238, 240, 241, .8);
   color: #938a8a;
+  @include outer-container;
   > div {
     padding-left: 2%;
     padding-top: $defaultMargin;
     padding-bottom: $defaultMargin;
+    @include media($tablet) {
+      @include span-columns(5);
+    }
   }
   h3, p {
     margin-bottom: $defaultMargin;
