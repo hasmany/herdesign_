@@ -155,7 +155,7 @@ img {
     padding-top: $defaultMargin;
     padding-bottom: $defaultMargin;
     @include media($tablet) {
-      @include span-columns(5);
+      @include span-columns(6);
     }
   }
   h3, p {
