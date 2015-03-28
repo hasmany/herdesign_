@@ -115,13 +115,15 @@ img {
   @include outer-container;
   .secondary-content {
     display: none;
-    border: 2px solid yellow;
+    // border: 2px solid blue;
+    img {
+      padding-right: $defaultMargin/2;
+    }
     @include media($tablet) {
       @include span-columns(2, block-collapse);
     }
   }
   .primary-content {
-    border: 2px solid red;
     @include media($tablet) {
       @include span-columns(10);
     }
@@ -132,10 +134,12 @@ img {
     }
     .grid-picture {
       // 6 worked, 4 so, why?
+      img {
+        padding: 2.5px 2.5px
+      }
       @include media($tablet) {
-        @include span-columns(6);
-        @include omega(2n);
-        margin-bottom: $defaultMargin / 2;
+       float: left;
+       width: percentage(1/2);
       }
     }
   }
