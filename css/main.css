@@ -23,8 +23,10 @@ body {
 
 header.main-header {
   text-align: center; }
-  header.main-header .header-wrapper {
-    background-color: rgba(238, 240, 241, 0.5); }
+  @media screen and (min-width: 768px) {
+    header.main-header .header-wrapper {
+      background-color: rgba(238, 240, 241, 0.7);
+      margin-bottom: 0.9375em; } }
   header.main-header .header-wrapper > div {
     max-width: 68em;
     margin-left: auto;
@@ -33,14 +35,19 @@ header.main-header {
       clear: both;
       content: "";
       display: table; }
-  @media screen and (min-width: 768px) {
-    header.main-header .logo {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      header.main-header .logo:last-child {
-        margin-right: 0; } }
+  header.main-header .logo {
+    background-color: rgba(238, 240, 241, 0.7);
+    margin-bottom: 0.9375em; }
+    @media screen and (min-width: 768px) {
+      header.main-header .logo {
+        background-color: initial;
+        margin-bottom: initial;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        header.main-header .logo:last-child {
+          margin-right: 0; } }
   @media screen and (min-width: 768px) {
     header.main-header .nav {
       float: left;
@@ -82,7 +89,8 @@ header.main-header {
     padding-left: 3.125em;
     margin-top: 0.3125em;
     margin-bottom: 0.3125em;
-    height: 2.5em; }
+    height: 2.5em;
+    opacity: .9; }
     @media screen and (min-width: 768px) {
       header.main-header input {
         margin-top: 2.125em;

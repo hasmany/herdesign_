@@ -43,13 +43,20 @@ body {
 header.main-header {
   text-align: center;
   .header-wrapper {
-    background-color: rgba(238, 240, 241, .5);
+    @include media($tablet) {
+      background-color: rgba(238, 240, 241, .7);
+      margin-bottom: $defaultMargin * 1.5;
+    }
   }
   .header-wrapper > div {
     @include outer-container
   }
   .logo {
+    background-color: rgba(238, 240, 241, .7);
+    margin-bottom: $defaultMargin * 1.5;
     @include media($tablet) {
+      background-color: initial;
+      margin-bottom: initial;
       @include span-columns(4);
     }
   }
@@ -96,11 +103,11 @@ header.main-header {
     background-image: url("../images/search_glass.png");
     background-repeat: no-repeat;
     background-color: #e7e7e7;
-    padding-left: $defaultMargin
-   * 5;
+    padding-left: $defaultMargin * 5;
     margin-top: $defaultMargin / 2;
     margin-bottom: $defaultMargin / 2;
     height: $defaultMargin * 4;
+    opacity: .9;
     @include media($tablet) {
       margin-top: $defaultMargin * 3.4;
       float: right;
