@@ -45,7 +45,6 @@ header.main-header {
   .header-wrapper {
     @include media($tablet) {
       background-color: rgba(238, 240, 241, .7);
-      margin-bottom: $defaultMargin * 1.5;
     }
   }
   .header-wrapper > div {
